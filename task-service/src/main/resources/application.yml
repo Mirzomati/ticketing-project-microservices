@@ -18,7 +18,7 @@ spring:
 server:
   port: 9092
 
-  eureka:
+eureka:
     instance:
       status-page-url-path: ${management.context-path}/info
       health-check-url-path: ${management.context-path}/health
@@ -27,7 +27,7 @@ server:
         defaultZone: http://discovery-service:8761/eureka/
 
 
-  management:
+management:
     endpoint:
       health:
         show-details: "ALWAYS"
@@ -38,7 +38,7 @@ server:
     context-path: http://localhost:${server.port}/actuator
 
 
-  info:
+info:
     application:
       name: ${spring.application.name}
       description: Ticketing Application
