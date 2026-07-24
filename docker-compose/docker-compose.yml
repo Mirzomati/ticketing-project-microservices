@@ -94,8 +94,7 @@ services:
     ports:
       - "9411:9411"
     networks:
-      -backend:
-         -
+      - backend
 networks:
   backend:
     driver: bridge
