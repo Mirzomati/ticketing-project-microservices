@@ -10,9 +10,11 @@ spring:
           uri: https://github.com/Mirzomati/ticketing-project-microservices-config
           default-label: main
           username: Mirzomati
-          password: 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
-        fail-fast: true
+          password: '{cipher}284d6ec0202a1c33fd831f66d336fb88f72993dd02938f663befc63b5ecaf7dc611b7a19298c9b1bc0127d17f47b4b9804cf310bfa7242678b45f8098fedc9aa'
+      fail-fast: true
 
+encrypt:
+  key: cydeo
 
 
 server:

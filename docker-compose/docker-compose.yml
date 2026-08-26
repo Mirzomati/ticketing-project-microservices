@@ -1,4 +1,4 @@
-version: '2.1'
+
 services:
   database:
     restart: "no"
@@ -137,8 +137,11 @@ services:
     depends_on:
       - prometheus
     networks:
-        - backend
+      - backend
   configserver:
+    build:
+      context: ../config-service
+      dockerfile: Dockerfile
     image: ${GROUP_ID}/config-server:${SERVICE_VERSION:-latest}
     ports:
       - "8888:8888"
@@ -146,6 +149,9 @@ services:
       backend:
         aliases:
           - "configserver"
+
+
+
 networks:
   backend:
     driver: bridge
