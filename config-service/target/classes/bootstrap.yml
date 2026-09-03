@@ -10,7 +10,7 @@ spring:
           uri: https://github.com/Mirzomati/ticketing-project-microservices-config
           default-label: main
           username: Mirzomati
-          password: '{cipher}284d6ec0202a1c33fd831f66d336fb88f72993dd02938f663befc63b5ecaf7dc611b7a19298c9b1bc0127d17f47b4b9804cf310bfa7242678b45f8098fedc9aa'
+          password: '{cipher}2b1e649143f34c9444d943403eec65bf96f8ff94915de562611b88d47483d861792724a38ae556e3f7d4aa7ca1b622e6db1f9689a07a28e598c9d468928e2a7d'
       fail-fast: true
 
 encrypt:
